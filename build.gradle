@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.giufus'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '19'
+
+compileJava {
+    options.compilerArgs += ["--enable-preview"]
+}
+test {
+    jvmArgs '--enable-preview'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
