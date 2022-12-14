@@ -2,7 +2,7 @@ package org.giufus;
 
 import java.util.Random;
 
-public class Main {
+public class VirtualTh {
     public static void main(String[] args) {
 
         boolean vThreads = args.length > 0;
