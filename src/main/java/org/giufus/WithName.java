@@ -29,6 +29,7 @@ record WithName(String name, Number age) implements Runnable {
 
                 switch (runnable) {
                     case null -> throw new IllegalArgumentException("isn't valid, is null");
+                    case WithName w -> System.out.println("Hey, I've found a named one");
                     case Runnable r -> r.run();
                 }
 
